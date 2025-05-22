@@ -1,0 +1,10 @@
+digest: 742b7d93
+name: dataset
+profile: '{"num_rows": 393, "num_elements": 1965}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "furniture", "required": true},
+  {"type": "long", "name": "type", "required": true}, {"type": "double", "name": "rate",
+  "required": true}, {"type": "double", "name": "delivery", "required": true}, {"type":
+  "double", "name": "sale", "required": true}]}'
+source: '{"tags": {"mlflow.user": "LENOVO", "mlflow.source.name": "modeling.py", "mlflow.source.type":
+  "LOCAL"}}'
+source_type: code
