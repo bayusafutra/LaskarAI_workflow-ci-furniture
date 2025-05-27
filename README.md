@@ -18,4 +18,3 @@ conda env create -f MLProject/conda.yaml
 conda activate mlflow-env
 cd MLProject
 python -m mlflow run . --entry-point main
-# LaskarAI_workflow-ci-furniture

@@ -1,0 +1,16 @@
+Nama: Mochamad Bayu Safutra
+Proyek: Workflow CI - Furniture Price Prediction (Laskar AI Bootcamp)
+
+Deskripsi:
+Saya telah membuat struktur folder Workflow CI dengan folder MLProject yang berisi:
+- modeling.py (script pelatihan model dengan MLflow autolog)
+- MLProject (file konfigurasi MLflow Project)
+- conda.yaml (dependensi untuk environment)
+- furniture_preprocessed.csv (dataset hasil preprocessing)
+
+Saya berhasil menjalankan MLflow Project dengan perintah:
+> python -m mlflow run . --entry-point main
+
+Log dan hasil pelatihan model otomatis dapat dilihat melalui MLflow Tracking UI.
+
+Link repository GitHub: https://github.com/bayusafutra/LaskarAI_workflow-ci-furniture
