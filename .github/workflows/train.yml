@@ -10,19 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-    - name: Set up Conda
-      uses: conda-incubator/setup-miniconda@v2
-      with:
-        auto-update-conda: true
-        environment-file: MLProject/conda.yaml
-        activate-environment: mlflow-env
+      - name: Set up Conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          environment-file: MLProject/conda.yaml
+          activate-environment: mlflow-env
+          auto-activate-base: false
 
-    - name: Install MLflow
-      run: pip install mlflow
+      - name: Install MLflow
+        run: pip install mlflow
 
-    - name: Run MLflow Project
-      working-directory: MLProject
-      run: mlflow run . --entry-point main
+      - name: Run MLflow Project
+        working-directory: MLProject
+        env:
+          MLFLOW_CONDA_RUN_COMMAND: "conda run"
+        run: mlflow run . --entry-point main
