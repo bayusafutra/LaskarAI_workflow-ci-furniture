@@ -28,4 +28,4 @@ jobs:
         working-directory: MLProject
         env:
           MLFLOW_CONDA_RUN_COMMAND: "conda run"
-        run: mlflow run . --entry-point main
+        run: mlflow run . --entry-point main --env-manager=local
